@@ -54,8 +54,5 @@ namespace Survey_Application
             get { return type; }
             protected set { type = value; }
         }
-
-
-
     }
 }
