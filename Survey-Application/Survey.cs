@@ -47,6 +47,6 @@ namespace Survey_Application
 
         private List<Question> Questions = new List<Question>();
 
-        //private List<Response> Respones = new List<Response>();
+        private List<Response> Respones = new List<Response>();
     }
 }
