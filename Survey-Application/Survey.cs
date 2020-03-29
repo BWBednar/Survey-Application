@@ -45,8 +45,24 @@ namespace Survey_Application
             set { numberPages = value; }
         }
 
-        private List<Question> Questions = new List<Question>();
+        /// <summary>
+        /// Private variable for the questions that are kept with this survey
+        /// </summary>
+        private List<Question> questionList = new List<Question>();
 
-        private List<Response> Respones = new List<Response>();
+        /// <summary>
+        /// The public field to access the questions in QuestionsList
+        /// </summary>
+        public IEnumerable<Question> QuestionList { get => questionList.ToArray(); }
+        
+        /// <summary>
+        /// Private list for the responses that are kept with this survey
+        /// </summary>
+        private List<Response> responseList = new List<Response>();
+
+        /// <summary>
+        /// The public field to access the responses in ResponsesList
+        /// </summary>
+        public IEnumerable<Response> ResponseList { get => responseList.ToArray(); }
     }
 }
